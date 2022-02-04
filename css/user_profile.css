@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+}
+
+.profile-container {
+  color: #c9c9c9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-profile {
+  width: 900px;
+  min-height: 500px;
+  height: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #000;
+}
+
+.user-profile h1 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  /* align-items: baseline; */
+  margin: 1rem;
+}
+.col {
+  margin-right: 4rem;
+}
+.col img {
+  width: 140px;
+  /* border-radius: 50%; */
+  box-shadow: 0 0 5px #000;
+}
+
+.bio {
+}

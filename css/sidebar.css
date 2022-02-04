@@ -1,0 +1,103 @@
+.sidebar {
+  width: 80px;
+  height: 100vh;
+  background-color: #232831;
+  border-right: 1px solid rgb(0, 0, 0);
+}
+
+.sidebar img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-radius: 10px;
+}
+
+.sidebar li:last-child {
+  position: absolute;
+  top: 88vh;
+  width: 50px;
+  padding-top: 1.25rem;
+  border-top: 1px solid #363664;
+}
+
+.sidebar li:nth-child(2) {
+  margin-top: 16rem;
+  padding-top: 1rem;
+}
+
+.sidebar li + li {
+  margin-top: 0.75rem;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 0 10px #000;
+}
+
+#sidebar_profile_pic {
+  box-shadow: none;
+}
+
+.sidebar a:hover,
+.sidebar a:focus,
+.sidebar a:active {
+  background-color: #18181d;
+  outline: 0;
+}
+
+.sidebar a:hover span,
+.sidebar a:focus span,
+.sidebar a:active span {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 10;
+}
+
+.sidebar a i {
+  font-size: 1.6rem;
+}
+
+.sidebar a span {
+  position: absolute;
+  background-color: #0d0d11;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  left: calc(100% + 1.75rem);
+  transform-origin: center left;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.15s ease;
+}
+
+.sidebar a span:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: #0d0d11;
+  left: -5px;
+  top: 50%;
+  transform: translatey(-50%) rotate(45deg);
+  border-radius: 3px;
+}
